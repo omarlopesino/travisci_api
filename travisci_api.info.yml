@@ -5,4 +5,4 @@ core: 8.x
 package: 'CI'
 
 dependencies:
-  - service_description
+  - service_description:service_description
