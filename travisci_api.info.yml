@@ -1,0 +1,8 @@
+name: 'travisci_api'
+type: module
+description: 'Integration with travis ci api'
+core: 8.x
+package: 'CI'
+
+dependencies:
+  - service_description

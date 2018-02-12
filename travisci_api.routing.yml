@@ -1,0 +1,11 @@
+
+travisci_api.travis_ci_config_form:
+  path: '/admin/config/services/travisci'
+  defaults:
+    _form: '\Drupal\travisci_api\Form\TravisCiConfigForm'
+    _title: 'TravisCiConfigForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+

@@ -1,0 +1,15 @@
+{
+  "name": "drupal/travisci_api",
+  "description": "Add guzzle client to make request to travis ci API.",
+  "type": "drupal-module",
+  "require": {
+    "drupal/service_description": "^1"
+  },
+  "authors": [
+    {
+      "name": "Omar Lopesino",
+      "email": "omarmoper@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}

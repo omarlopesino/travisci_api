@@ -1,0 +1,49 @@
+{
+  "name": "Travis CI api",
+  "apiVersion": "3",
+  "description": "https://api.travis-ci.org/",
+  "baseUri": "https://api.travis-ci.org/",
+  "operations": {
+    "Request": {
+      "httpMethod": "POST",
+      "uri": "repo/{repo_name}/requests",
+      "responseModel": "getResponse",
+      "summary": "Allow make a request to travis ci.",
+      "parameters": {
+        "repo_name": {
+          "location": "uri",
+          "type": "string",
+          "description": "Repo name."
+        },
+        "request": {
+          "location": "json",
+          "type": "object",
+          "description": "Request."
+        },
+        "Content-Type": {
+          "location": "header",
+          "type": "string",
+          "default": "application/json"
+        },
+        "Authorization": {
+          "location": "header",
+          "type": "string",
+          "required": true
+        },
+        "Travis-API-Version": {
+          "location": "header",
+          "type": "string",
+          "default": "3"
+        }
+      }
+    }
+  },
+  "models": {
+    "getResponse": {
+      "type": "object",
+      "additionalProperties": {
+        "location": "json"
+      }
+    }
+  }
+}

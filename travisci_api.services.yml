@@ -1,0 +1,5 @@
+services:
+  travisci_api.client:
+    class: Drupal\travisci_api\TravisCiClient
+    arguments: ['@http_client', '@service_description.loader', '@config.factory']
+

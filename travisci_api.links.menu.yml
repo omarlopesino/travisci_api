@@ -1,0 +1,7 @@
+travisci_api.travis_ci_config_form:
+  title: 'Travis CI'
+  route_name: travisci_api.travis_ci_config_form
+  description: 'Travis CI API configuration'
+  parent: system.admin_config_system
+  weight: 99
+
